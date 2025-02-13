@@ -18,8 +18,9 @@ Dans cet exercice de démo, nous allons explorer les bases d'**AdonisJS** en cr�
 
 ## Prérequis
 Avant de commencer cet exercice de démo, assurez-vous que vous avez les éléments suivants :
--   **Node.js** et **npm** installé sur votre ordinateur.
--   Un éditeur de code (par exemple, **Visual Studio Code**).
+- **Node.js** et **npm** installé sur votre ordinateur.
+- Un éditeur de code (par exemple, **Visual Studio Code**).
+- Des bonnes bases en **html**, **css**, **JavaScript** et **TypeScript**.
 
 ## Installation
 Pour installer ce projet d'exercice de démo, suivez les étapes suivantes. :
@@ -33,6 +34,11 @@ Pour installer ce projet d'exercice de démo, suivez les étapes suivantes. :
     cd introduction-framework-adonis-js-demo
     ```
     
+-   Créez une nouvelle branche :
+    ```
+    git checkout -b nom-de-ma-branche
+    ```
+
 -   Installez les dépendances du projet :
     ```
     npm install
