@@ -13,6 +13,12 @@ export default class FrontOfficesController {
       pageDescription: 'Blogoss the best trip blog in kinshasa',
     })
   }
+  public async servicesPage({ view }: HttpContext) {
+    return view.render('pages/services', {
+      pageTitle: 'Blogoss kinshasa services',
+      pageDescription: 'Blogoss the best trip blog in kinshasa',
+    })
+  }
   public async contactPage({ view }: HttpContext) {
     return view.render('pages/contact', {
       pageTitle: 'Contact Blogoss kinshasa',
