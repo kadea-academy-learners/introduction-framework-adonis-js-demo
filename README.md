@@ -47,6 +47,13 @@ Pour installer ce projet d'exercice de démo, suivez les étapes suivantes. :
     ```
     code .
     ```
+- Créez un fichier **.env**
+
+- Copier le contenu de **.env.exemple** et coller dans le fichier **.env** sauf la variable **APP_KEY** qui dois être générer en tapant la commande :
+    ```
+    node ace generate:key
+    ``` 
+
 ## Lancez votre projet
 Pour lancer votre projet en mode développement tapez la commande :
 ```
