@@ -31,4 +31,8 @@ export default class FrontOfficesController {
       pageDescription: 'Blogoss the best trip blog in kinshasa',
     })
   }
+  public async subscribeToBlog({ request }: HttpContext) {
+    const { email } = request.all()
+    return { message: 'Email subscribed successfully' }
+  }
 }

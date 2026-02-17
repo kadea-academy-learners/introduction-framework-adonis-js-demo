@@ -1,0 +1,52 @@
+@component('layouts/frontoffice')
+@slot('title')
+<title>
+  Blogoss - {{ pageTitle }}
+</title>
+@endslot
+
+@slot('meta')
+<meta name="description" content="{{ pageDescription }}">
+@endslot
+
+@slot('main')
+<main>
+  <div class="bg-sand-1">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="">
+        <h1 class="text-4xl font-extrabold sm:text-5xl md:text-6xl">
+          Apprenants creation
+        </h1>
+        <form action="{{ route('apprenants.create') }}" method="post">
+          @csrf
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Name</label>
+            <input type="text" name="name" id="name" class="form-input" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email</label>
+            <input type="email" name="email" id="email" class="form-input" required>
+          </div>
+          <div class="mb-4">
+            <label for="genre" class="block text-gray-700">Genre</label>
+            <select name="genre" id="genre" class="form-select" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="avatar" class="block text-gray-700">Avatar</label>
+            <input type="text" name="avatar" id="avatar" class="form-input" required>
+          </div>
+          <div class="mb-4">
+            <label for="bio" class="block text-gray-700">Bio</label>
+            <textarea name="bio" id="bio" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Apprenant</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+@endslot
+@end
