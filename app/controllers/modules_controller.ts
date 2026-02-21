@@ -25,7 +25,6 @@ export default class ModulesController {
   }
   getModule(context: HttpContext) {
     const idParam: string = context.request.params().id
-    console.log(Math.ceil(idParam))
     if (idParam.length && Number.parseInt(idParam) > 0) {
       const id = Number.parseInt(idParam)
       const module = modules.find((current: Module) => current.id === id)
